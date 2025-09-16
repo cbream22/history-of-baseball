@@ -1,0 +1,80 @@
+/* Base tag styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  color: #2a3d66;
+  text-align: center;
+}
+
+p {
+  margin: 1em 20px;
+  font-size: 1rem;
+}
+
+/* Header, Nav, Footer via IDs */
+#main-header {
+  background-color: #2a3d66;
+  color: #fff;
+  padding: 20px 0;
+}
+
+#main-footer {
+  background-color: #1f2a50;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Classes */
+.site-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.site-nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.timeline {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  max-width: 1000px;
+  border-radius: 8px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.event {
+  background-color: #e2e8f0;
+  padding: 15px;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 200px;
+}
