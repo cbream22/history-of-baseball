@@ -1,80 +1,90 @@
-/* Base tag styles */
+/* ===== Base Styles ===== */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8;
-  color: #333;
-  line-height: 1.5;
+  background-color: #ffffff;
+  color: #222222; /* Dark enough for good contrast */
+  line-height: 1.6;
 }
 
-h1, h2, h3 {
-  color: #2a3d66;
+header {
+  background-color: #002147; /* Dark navy */
+  color: #ffffff;
+  padding: 20px;
   text-align: center;
 }
 
-p {
-  margin: 1em 20px;
-  font-size: 1rem;
-}
-
-/* Header, Nav, Footer via IDs */
-#main-header {
-  background-color: #2a3d66;
-  color: #fff;
-  padding: 20px 0;
-}
-
-#main-footer {
-  background-color: #1f2a50;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* Classes */
-.site-title {
-  font-size: 2.5rem;
+header h1 {
   margin: 0;
+  font-size: 2rem;
 }
 
-.site-nav a {
-  color: #fff;
-  margin: 0 15px;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.site-nav a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-.intro {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 10px;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.timeline {
-  margin: 30px auto;
+main {
   padding: 20px;
-  background-color: #ffffff;
-  max-width: 1000px;
-  border-radius: 8px;
+  max-width: 900px;
+  margin: auto;
 }
 
-.flex-container {
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
-  flex-wrap: wrap;
+section {
+  margin-bottom: 30px;
 }
 
-.event {
-  background-color: #e2e8f0;
+h2 {
+  color: #002147;
+}
+
+h3 {
+  color: #444444;
+}
+
+img {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #002147;
+  color: #ffffff;
+  text-align: center;
   padding: 15px;
-  border-radius: 5px;
-  flex: 1;
-  min-width: 200px;
+  margin-top: 20px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
 }
